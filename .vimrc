@@ -33,20 +33,18 @@ if has("autocmd")
   autocmd GUIEnter * set visualbell t_vb=
 endif
 
-filetype on
-filetype indent on
-filetype plugin on
+filetype plugin indent on
 
 " highlight matching parens/braces/etc
 runtime macros/matchit.vim 
 
 " line numbers
-set number
+"set number
 
 " colorscheme
 " wombat: http://dengmao.wordpress.com/2007/01/22/vim-color-scheme-wombat/
 color wombat
-syntax enable
+syntax on
 
 " GUI cursor
 set gcr=n-v-c:block-blinkwait750-blinkon1000-blinkoff500,i-ci-r-cr:hor25-blinkwait750-blinkon1000-blinkoff500
@@ -66,6 +64,9 @@ highlight clear SpellRare
 highlight SpellRare term=underline cterm=underline
 highlight clear SpellLocal
 highlight SpellLocal term=underline cterm=underline
+
+" add all Go plugins
+set rtp+=$GOROOT/misc/vim
 
 " add 'Tabs' menu
 amenu Tabs.&New :tabnew<cr>
