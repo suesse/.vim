@@ -53,3 +53,12 @@ hi Conditional guifg=#e29663 gui=none
 hi Error       guibg=#592929 gui=none
 hi Todo        guifg=#ccc52f gui=none
 hi OverLength  guibg=#592929 gui=none
+
+" MiniBufExpl Colors
+hi MBEVisibleActive guifg=#A6DB29 guibg=fg
+hi MBEVisibleChangedActive guifg=#F1266F guibg=fg
+hi MBEVisibleChanged guifg=#F1266F guibg=fg
+hi MBEVisibleNormal guifg=#5DC2D6 guibg=fg
+hi MBEChanged guifg=#CD5907 guibg=fg
+hi MBENormal guifg=#808080 guibg=fg
+
